@@ -1,0 +1,175 @@
+/* the norm */
+#gritter-notice-wrapper {
+	position:fixed;
+	top:60px;
+	right:25px;
+	width:310px;
+	z-index:9999;
+}
+#gritter-notice-wrapper.top-left {
+    left: 20px;
+    right: auto;
+}
+#gritter-notice-wrapper.bottom-right {
+    top: auto;
+    left: auto;
+    bottom: 50px;
+    right: 20px;
+}
+#gritter-notice-wrapper.bottom-left {
+    top: auto;
+    right: auto;
+    bottom: 20px;
+    left: 20px;
+}
+.gritter-item-wrapper {
+	position:relative;
+	margin:0 0 10px 0;
+	background:url('../images/ie-spacer.gif'); /* ie7/8 fix */ 
+}
+.gritter-top {
+	background-color:#334152;
+	height:10px;
+}
+.hover .gritter-top {
+	background-position:right -30px;
+}
+.gritter-bottom {
+	background-color:#334152;
+	height:8px;
+	margin:0;
+}
+.hover .gritter-bottom {
+	background-position: bottom right;
+}
+.gritter-item {
+	display:block;
+	background-color:#334152;
+	color:#fff;
+	padding:2px 11px 8px 11px;
+	font-size: 11px;
+	font-family:"Proxima Nova W01","Rubik",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+.hover .gritter-item {
+	background-position:right -40px;
+}
+.gritter-item p {
+	padding:0;
+	margin:0;
+	word-wrap:break-word;
+}
+.gritter-close {
+	display:none;
+	position:absolute;
+	top:5px;
+	right:5px;
+	background:url(../images/gritter.png) no-repeat left top;
+	cursor:pointer;
+	width:30px;
+	height:30px;
+	text-indent:-9999em;
+}
+.gritter-title {
+	font-size:11px;
+	font-weight:normal;
+	padding:0 0 7px 0;
+	display:block;
+	text-shadow:1px 1px 0 #000; /* Not supported by IE :( */
+}
+.gritter-image {
+	width:48px;
+	height:48px;
+	float:left;
+}
+.gritter-with-image,
+.gritter-without-image {
+	padding:0;
+}
+.gritter-with-image {
+	width:220px;
+	float:right;
+}
+/* for the light (white) version of the gritter notice */
+.gritter-light .gritter-item,
+.gritter-light .gritter-bottom,
+.gritter-light .gritter-top,
+.gritter-light .gritter-close {
+    background-image: url(../images/gritter-light.png);
+    color: #222;
+}
+.gritter-light .gritter-title {
+    text-shadow: none;
+}
+
+.gritter-item-wrapper {
+ background:0 0!important;
+ -webkit-border-radius:3px!important;
+ -moz-border-radius:3px!important;
+ border-radius:3px
+}
+.gritter-bottom,.gritter-item,.gritter-top {
+ background:url(../img/transparent/black-0.8.png)!important;
+ background:rgba(0,0,0,.8)!important
+}
+.gritter-close,.gritter-light .gritter-close {
+ left:auto!important;
+ right:15px!important;
+ top:0!important;
+ background:#ff5b57!important;
+ width:16px!important;
+ height:16px!important;
+ line-height:16px!important;
+ display:block!important
+}
+.gritter-close:before,.gritter-light .gritter-close:before {
+ content:'\f00d'!important;
+ font-family:FontAwesome!important;
+ font-size:9px!important;
+ width:16px!important;
+ height:16px!important;
+ line-height:16px!important;
+ color:#fff!important;
+ text-indent:0!important;
+ position:absolute!important;
+ text-align:center!important;
+ right:0!important;
+ top:0!important
+}
+.gritter-with-image {
+ width:210px!important
+}
+.combobox-container,.datepicker table,.datepicker-full-width .datepicker-inline {
+ width:100%
+}
+.gritter-image {
+ margin:2px 10px 0 0!important;
+ -webkit-border-radius:2px;
+ -moz-border-radius:2px;
+ border-radius:2px
+}
+.gritter-title {
+ font-size:11px!important;
+ line-height:16px!important;
+ padding-bottom:2px!important;
+ font-weight:400!important;
+ color:#fff!important;
+ text-shadow:none!important
+}
+.gritter-light .gritter-title {
+ color:#333!important;
+ font-weight:600!important
+}
+.gritter-item {
+ display:block;
+	background-color:#334152;
+	color:#fff;
+	padding:2px 11px 8px 11px;
+	font-size: 11px;
+	font-family:"Proxima Nova W01","Rubik",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+}
+.gritter-light .gritter-bottom,.gritter-light .gritter-item,.gritter-light .gritter-top {
+ background:url(../img/transparent/white-0.98.png)!important;
+ background:rgba(255,255,255,.98)!important;
+ color:#999!important
+}
